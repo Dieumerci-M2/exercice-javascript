@@ -32,9 +32,8 @@ function addTodo(event) {
 }
 
 function removemodTodo(e) {
-    console.log(e.target);
-    /* if (item.classList[0] === "btn_trash") {;
-            const todo = item.parentElement;
-            tododiv.remove();
-        };*/
+    if (item.classList[0] === "btn_trash") {
+        const todo = item.parentElement;
+        todo.remove();
+    };
 }
